@@ -1,0 +1,375 @@
+
+
+main {
+    padding-top: 80px; /* Ajusta este valor según la altura de tu header */
+}
+body{
+    margin: 0;
+    font-family:"Parkinsans", sans-serif;
+    font-size: 20px;
+}
+/*Encabezado*/
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 91%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 80px;
+    background-color: #526E48;
+    color: #fff;
+}
+.logo h3 {
+    color: #f7f1cf;
+    margin: 0;
+    font-size: 30px;
+}
+
+.navbar {
+    position: relative;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #f0a500;
+}
+
+/* Estilo para el ícono de menú hamburguesa */
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20px;
+    width: 30px;
+}
+
+.menu-icon .line {
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 3px;
+}
+
+/* Ocultar el menú en dispositivos móviles por defecto */
+#menu-toggle {
+    display: none;
+}
+
+#menu-toggle:checked ~ .nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: absolute;
+    top: 80px;
+    background-color: #526E48;
+    padding: 15px;
+    margin-left: -75px;
+    border-radius: 5px;
+    z-index: 10;
+}
+/*aca termina la edicion del encabezado*/
+.imagen {
+    width: 100%; /* Ajusta la imagen al ancho de su contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+/**/
+
+p{
+    color:black;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+h1{
+    color: black;
+    font-size: 40px;
+    text-align: center 
+    
+    
+}
+h2{
+    color: black ;
+    font-size: 28px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+ol{
+    margin-left: 50px;
+    margin-right: 50px
+}
+.contenedor2{/*sirve para acomodar el tento y la imagen en horizontal*/
+    display: flex;
+}
+ul.container2{
+    display: flex;
+}
+.contenedor3{
+    display: flex;
+}
+.circulo{/*para que le imagen sea redonda*/
+    width: 250px;
+    height: 250px ;
+    border-radius: 100%;
+    margin-left: 50px;
+    margin-right: 50px;
+
+}
+.circulo2{/*para que le imagen sea redonda*/
+    width: 250px;
+    height: 250px ;
+    border-radius: 100%;
+    margin-left: 50px;
+    margin-right: 50px;
+
+}
+/* Estilo general para el contenedor de otras energias */
+.otrasEnergias {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+/* Contenedor principal */
+.contenido {
+    display: flex;
+    gap: 30px; /* Espaciado horizontal entre cuadros */
+    flex-wrap: wrap; /* Permite que los cuadros se ajusten si no caben en una línea */
+}
+
+/* Estilo para cada cuadro */
+.contenido > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #ffffff; /* Fondo blanco para el cuadro */
+    border: 1px solid #ddd; /* Borde ligero */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+    padding: 20px;
+    max-width: 600px; /* Ancho máximo para cada cuadro */
+    flex: 1; /* Permite que todos los cuadros sean del mismo tamaño */
+}
+
+/* Imagen dentro de cada cuadro */
+.contenido > div img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px; /* Espaciado entre imagen y texto */
+}
+
+/* Descripción de cada energía */
+.contenido > div p {
+    font-size: 20px;
+    color: #666; /* Color gris para texto secundario */
+    line-height: 1.5;
+}
+/*pie de pagina*/
+.footer {
+    font-family:"Parkinsans", sans-serif;
+    background-color: #526E48;
+    padding: 20px 0;
+}
+  
+  .container2 {/*Sirve para acomodar el footer, es el conteiner dentro del footer*/
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .footer-content {/*abarca todo el footer y lo organiza en horizontal*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .footer-section {
+    flex: 1;
+    margin: 10px;
+    min-width: 250px;
+  }
+  
+  .footer-section h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #e4d6c1;
+  }
+  
+  .footer-section p,
+  .footer-section ul {
+    margin: 0;
+    line-height: 1.8;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul li a {
+    text-decoration: none;
+    color: #f4f4f4;
+    transition: color 0.3s;
+  }
+  
+  .footer-section ul li a:hover {
+    color: #ff9900;
+  }
+  
+  .footer-section i {
+    margin-right: 10px;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+  }
+/* Responsividad */
+@media (max-width: 1068px) {
+    /* Para tabletas y pantallas medianas */
+    
+    header{
+        width: 85%;
+    }
+    .contenedor2{
+        flex-direction: column; /* Cambia de horizontal a vertical */ 
+    }
+    .contenedor3{
+        flex-direction: column;
+    }
+    .imagenes {
+        width: 300px; /* Reduce el tamaño de las imágenes */
+        margin: auto; /* Centra las imágenes */
+    }
+    .circulo{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .circulo2{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    h1, h2, p {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+@media (max-width: 768px) {
+    header {
+        width: 80%;
+    }
+    .nav-links {
+        display: none;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+    main{
+        margin-top: 8%;
+    }
+    .contenedor2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centra horizontalmente */
+        justify-content: center; /* Centra verticalmente */
+    }
+    .circulo {
+        margin: 0 auto;
+    }
+    .contenedor3{
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centra horizontalmente */
+        justify-content: center; /* Centra verticalmente */
+    }
+    .circulo2{
+        margin: 0 auto;
+    }
+    .contenido {
+        flex-direction: column; /* Cambia a diseño vertical */
+        gap: 20px; /* Espaciado entre cuadros */
+    }
+
+    .contenido > div {
+        max-width: 100%; /* Cuadros ocupan todo el ancho disponible */
+    }
+
+    
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+} 
+
+
+@media (max-width: 523px) {
+    /* Para teléfonos móviles */
+/*Encabezado*/
+    header {
+        width: 70%;
+    }
+    .nav-links {
+        display: none;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+
+/**/
+    main{
+        margin-top: 8%;/*Para que el header no tape la imagen*/
+    }
+    .contenedor2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centra horizontalmente */
+        justify-content: center; /* Centra verticalmente */
+    }
+    .circulo {
+        margin: 0 auto;
+    }
+    .contenedor3{
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centra horizontalmente */
+        justify-content: center; /* Centra verticalmente */
+    }
+    .circulo2{
+        margin: 0 auto;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+} 
+ 
+  

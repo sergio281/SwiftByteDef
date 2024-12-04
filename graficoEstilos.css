@@ -1,0 +1,197 @@
+/* General */
+main {
+    padding-top: 150px;
+    max-width: 1200px;
+    /* margin: 0 auto; */
+    padding: 10px;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+/*Encabezado*/
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 91%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 80px;
+    background-color: #526E48;
+    color: #fff;
+}
+.logo h3 {
+    color: #f7f1cf;
+    margin: 0;
+    font-size: 30px;
+}
+
+.navbar {
+    position: relative;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #f0a500;
+}
+
+/* Estilo para el ícono de menú hamburguesa */
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20px;
+    width: 30px;
+}
+
+.menu-icon .line {
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 3px;
+}
+
+/* Ocultar el menú en dispositivos móviles por defecto */
+#menu-toggle {
+    display: none;
+}
+
+#menu-toggle:checked ~ .nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: absolute;
+    top: 80px;
+    background-color: #526E48;
+    padding: 15px;
+    margin-left: -75px;
+    border-radius: 5px;
+    z-index: 10;
+}
+
+/* h1 {
+    font-size: 2rem;
+    margin: 0;
+} */
+
+
+.chart-section {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.chart-section h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #00695c;
+}
+
+canvas {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.error-message {
+    color: #d32f2f;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    background-color: #526E48;
+    color: white;
+    padding: 10px 0;
+    margin-top: 40px;
+}
+
+/* Responsividad */
+@media screen and (max-width: 768px) {
+    header {
+        width: 80%;
+    }
+    .nav-links {
+        display: none;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+ 
+    /* h1 {
+        font-size: 1.8rem;
+        padding: 15px 0;
+    } */
+
+    main {
+        padding: 10px;
+    }
+
+    .chart-section h2 {
+        font-size: 1.2rem;
+    }
+
+    canvas {
+        max-width: 90%; /* Reduce el ancho del gráfico */
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* h1 {
+        font-size: 1.5rem;
+        padding: 10px 0;
+    } */
+
+    .chart-section h2 {
+        font-size: 1rem;
+    }
+
+    canvas {
+        max-width: 100%; /* Gráficos ocupan todo el ancho */
+    }
+
+    footer {
+        font-size: 0.8rem;
+        padding: 5px 0;
+    }
+}
+@media (max-width: 523px) {
+    /* Para teléfonos móviles */
+/*Encabezado*/
+    header {
+        width: 70%;
+    }
+    .nav-links {
+        display: none;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+}

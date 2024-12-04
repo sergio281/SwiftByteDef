@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Energía</title>
+    <link rel="stylesheet" href="formulario.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h3 class="nombre-empresa">SwiftByte</h3>
+        </div>
+        <nav class="navbar">
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </label>
+    
+            <ul class="nav-links">
+                <li><a href="principal.html">Inicio</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="formulario.html">Calcula tu consumo</a></li>
+                <li><a href="tabla.html">Tabla</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Calculadora de Energía</h1>
+    <label for="paisSelect">Selecciona un país:</label>
+    <select id="paisSelect"></select>
+
+    <label for="consumoMensual">Consumo mensual de energía (en kWh):</label>
+    <input type="number" id="consumoMensual" placeholder="Ejemplo: 500">
+
+    <button id="calcularBtn">Calcular</button>
+
+    <!-- Contenedor para resultados -->
+    <div id="resultados"></div>
+
+    <script src="formulario.js"></script>
+</body>
+</html>
