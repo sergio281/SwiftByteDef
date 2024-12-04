@@ -64,7 +64,7 @@ function calcularPorcentaje(headers, data, paisSeleccionado, consumoMensual) {
     const columns = lastRow.split(',');
     const solarGeneration = parseFloat(columns[solarIndex]);
     const consumoAnual = (consumoMensual * 12) / 1000;
-    const porcentaje = (consumoAnual * 100) / solarGeneration;
+    const porcentaje = consumoAnual / solarGeneration;
 
     resultados.innerHTML = `
         <p>Consumo anual: ${consumoAnual.toFixed(6)} TWh</p>
